@@ -1,0 +1,83 @@
+.btn{
+	height:50px;
+	line-height: 50px;
+	background-color:#000;
+	display:inline-block;
+	padding: 0px 33px;
+	font-size: 15px;
+	font-family: 'Bebas';
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 1.5px;
+	font-weight: bold;
+	&-w{
+		background-color:#fff;
+		color: #000;
+	}
+
+	&:hover{}
+	&.fw{width: 100%;}
+}
+
+
+
+input [type=text], input [type=email], input[type=tel], textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+.input{
+	border-radius: 0 !important;
+	width: 100%;
+	display: block;
+	padding:0px 18px;
+	height: 50px;
+	border: solid 2px #959595;
+	background-color: #252525;
+	color: #959595;
+	font-size: 15px;
+	&.focus{}
+	&.err{
+		border: solid 2px red;
+	}
+}
+textarea.input{
+	resize:none;
+	height: 100px;
+	padding: 10px 18px;
+}
+
+
+
+	
+//=========================================================================================================================
+	
+//КНОПКА
+
+/*.btn{
+	display:inline-block;
+	padding: 0px 0px;
+	&:hover{}
+	&.fw{width: 100%;}
+}*/
+
+
+// ===================================================================================================================
+
+
+// ФОРМА ТЕКСТОВОГО ВОВОДА
+
+// <input autocomplete="off" class="input" type="text" name="form[]" 
+
+/*
+input [type=text], input [type=email], input[type=tel], textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+.input{
+	border-radius: 0 !important;
+	width: 100%;
+	display: block
+	padding:0px 20px;
+	&.focus{}
+	&.err{}
+}
+textarea.input{
+	resize:none;
+	padding: 0px 0px;
+}
+*/
+//============================================================================================================================================

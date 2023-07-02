@@ -1,0 +1,22 @@
+footer{
+	margin:0px 249px 0px 243px
+}
+.footer-body {
+	@include flexbox();
+	height: 125px;
+	justify-content:space-between;
+	align-items:center;
+}
+
+
+.footer-body-column {}
+.footer-text {
+	font-size: 15px;
+	line-height: 25px;
+	color: #4d4d4d;
+	a{text-decoration: underline;
+	 color: #4d4d4d;
+	 &:hover{text-decoration: none;}
+	}
+}
+.footer_logo {}

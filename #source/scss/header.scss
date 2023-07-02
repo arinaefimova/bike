@@ -1,0 +1,97 @@
+header{
+	margin: 29px 248px 33px 241px;
+	background-color:#fff;
+}
+
+.heder-top {
+	@include flexbox();
+	justify-content:space-between;
+}
+
+
+.header-top-lang {
+	@include flexbox();
+}
+
+
+.header-top-lang__item {
+	display: block;
+	line-height: 19px;
+	color: #000;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-family: Bebas;
+	letter-spacing: 1px;
+	font-weight: bold;
+	padding: 0px 4px;
+	margin: 0px 10px 0px 0px;
+	&.active{
+		background-color: #000;
+		color:#fff
+	}
+}
+
+
+.header-top-lang__link {
+	font-size:15px;
+	color:#000;
+	font-family: 'Akzidenz';
+	text-transform: uppercase;
+	text-decoration:underline;
+
+
+}
+
+
+
+.header-bottom {
+	@include flexbox();
+	align-items:center;
+}
+
+
+.header-bottom__column {
+	flex:0 0 33.333%;
+}
+
+
+
+.header-bottom-menue {}
+
+.header-bottom-menue-list {
+	@include flexbox();
+	justify-content: space-between;
+}
+
+
+.header-bottom-menue__link {
+	font-family: 'Akzidenz';
+	color: #000;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+
+
+.header-logo {
+	display: block;
+	text-align: center;
+}
+
+
+.header-logo__text {
+	display: block;
+	font-family: Bebas;
+	font-size: 8px;
+	letter-spacing: 2.72px;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+
+.header-logo-image {
+	display: inline-block;
+	margin: 13px 0px 22px 0px;
+}

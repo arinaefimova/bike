@@ -1,0 +1,381 @@
+//Файл обнуляющих стилей
+@import "nullstyle.scss";
+//подключение шрифта
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Fasthand&family=PT+Sans:ital@1&display=swap');
+
+@font-face {
+	font-family: 'Akzidenz';
+	src: url('../fonts/AkzidenzGroteskBQ-BdCnd.eot');
+	src: url('../fonts/AkzidenzGroteskBQ-BdCnd.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/AkzidenzGroteskBQ-BdCnd.woff2') format('woff2'),
+	url('../fonts/AkzidenzGroteskBQ-BdCnd.woff') format('woff'),
+	url('../fonts/AkzidenzGroteskBQ-BdCnd.ttf') format('truetype'),
+	url('../fonts/AkzidenzGroteskBQ-BdCnd.svg#AkzidenzGroteskBQ-BdCnd') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bebas';
+	src: url('../fonts/BebasNeueRegular.eot');
+	src: url('../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/BebasNeueRegular.woff2') format('woff2'),
+	url('../fonts/BebasNeueRegular.woff') format('woff'),
+	url('../fonts/BebasNeueRegular.ttf') format('truetype'),
+	url('../fonts/BebasNeueRegular.svg#BebasNeueRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+//миксины
+@mixin flexbox(){display: -webkit-box; display: -moz-box; display:-ms-flexbox; display: -webkit-flex; display: flex; font-size: 0; }
+
+//шрфит по умолчанию
+$fontfamily:"PT Sans";
+
+//переменные
+$mw:880;
+
+
+
+
+
+//основной блок
+
+.private {
+	@include flexbox();
+	background-color: #000;
+	margin: 0px 0px 75px 0px;
+
+}
+
+
+.private_column {
+	flex: 0  0 50% ;
+}
+
+
+
+.private_image {
+	height: 100%
+	
+}
+.private_body {
+	padding: 75px 0px 75px 60px;
+}
+
+.private-body-content{
+	max-width:305px; 
+
+
+}
+
+.private_body_title {
+	font-family: 'Akzidenz';
+	font-size: 50px;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing:5px;
+	margin: 0px 0px 30px 0px;
+}
+
+.private_body_text {
+	font-size: 15px;
+	line-height: 25px;
+	color: #fff;
+	margin: 0px 0px 45px 0px;
+
+}
+
+
+
+.private_body-buttons {
+	@include flexbox();
+	align-items:center;
+}
+
+
+
+.private_body-buttons_item {}
+.private_body-buttons_link {
+	font-family:'Bebas';
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 15px;
+	text-decoration: underline;
+	margin: 0px 0px 0px 15px ;
+ 	letter-spacing: 1.5px;
+ 	font-weight: bold;
+
+}
+
+
+
+
+
+
+//===================================================================================
+
+
+
+
+.products {
+	margin:  0px 0px 40px 0px;
+
+}
+.container {
+	
+}
+.products-body {
+	margin: 0px 0px 0px 280px;
+	@include flexbox();
+
+}
+.body_column {
+	flex: 0 0 25% 0;
+	margin:  0px 0px 40px 0px;
+
+}
+.products-item {
+
+}
+.products-item_image {
+	display: block;
+	//padding: 0px 0px 100% 0px;
+	margin: 0px 0px 25px 0px;
+}
+.products-item_title {
+	display: block;
+	font-family: 'Akzidenz';
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2.5px;
+	color: #000;
+	margin: 0px 0px 30px 0px;
+
+}
+.products-item_text {
+	font-size: 15px;
+	line-height: 25px;
+	margin: 0px 0px 25px 0px;
+}
+.products-item_btn {
+	margin: 0px 0px 29px 0px;
+}
+.products-item_link {
+	display: block;
+font-family: 'Bebas';
+text-transform: uppercase;
+color: #000;
+font-size: 15px;
+text-decoration: underline;
+letter-spacing: 1.5px;
+font-weight: bold;
+
+}
+
+//=========================================================================================
+
+
+
+
+
+.why {}
+.why-top {
+	@include flexbox();
+	background-color: #000;
+
+
+	
+}
+.why-top_column {
+	flex: 0 0 50%;
+	margin: 0px 0px -10px 0px;
+	
+}
+.why-top-text {
+	display: block;
+	font-family:'Akzidenz';
+	font-size: 50px;
+	letter-spacing: 5px;
+	//line-height: 2.5px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: right;
+	padding: 55px 60px 55px 0px;
+
+
+}
+.why-top-image {
+	//display: inline-block;
+	height: 100%;
+	max-width: 100%;
+
+
+
+
+}
+
+
+
+.why-body {
+	
+	padding: 50px 0 0 0;
+	background-color: #ebebeb;
+	
+}
+
+.why-body-row{
+	@include flexbox();
+	flex-wrap:wrap;
+	margin: 0px 0px 0px 260px;
+
+}
+.why-body_column {
+	flex: 0 0 50%;
+	margin: 0px 0px 50px 0px;
+}
+
+
+.why-body-item {
+	@include flexbox();
+}
+.why-body-item_icon {
+	flex: 0 0 100px;
+	height:100px;
+	@include flexbox();
+	justify-content:center; align-items:center;
+	background-color: #000;
+
+}
+.why-body-item-body {
+	flex:1 1 100%;
+	@include flexbox();
+	flex-direction:column;
+	padding: 0px 0px 0px 11px;
+}
+
+
+
+.why-body-item-body-title {
+	flex: 1 1 auto;
+	font-family: 'Akzidenz';
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+
+
+}
+.why-body-item-body-text {
+	font-size: 15px;
+	line-height: 1.67;
+	padding: 0px 15px 0px 0px;
+
+}
+
+
+//==================================================================
+
+
+.contacts {
+	padding: 80px 0px 0px 0px;
+	
+}
+.contacts-top {
+	margin: 0px 0px 0px 260px;
+}
+.contacts-title {
+	font-family: 'Akzidenz';
+	font-size: 50px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin: 0px 0px 30px 0px;
+}
+
+
+.contacts-body {
+	@include flexbox();
+	flex-wrap:wrap;
+}
+
+
+.contacts-body-column {
+	flex: 0 0 50%;
+	margin: 0px 0px 20px 0px;
+}
+
+
+.contacts-body-column_items {
+	font-size: 15px;
+	color: #000;
+	display: inline-block;
+	line-height: 27px;
+	padding: 0px 0px 0px 35px;
+
+}
+.contacts-body-column_item-1 {
+	background: url('../img/metka.svg')left no-repeat ;
+}
+.contacts-body-column_item-2 {
+	background: url('../img/email.svg')left no-repeat ;
+}
+.contacts-body-column_item-3 {
+	background: url('../img/telephone.svg')left no-repeat ;
+}
+.contcts-social {
+	@include flexbox();
+}
+.contcts-social_item {
+	margin: 0px 30px 0px 0px;
+	&:last-child{margin: 0px 0px 0px 0px;}
+}
+
+
+.contacts-content {
+	@include flexbox();
+	background-color: #000;
+
+
+}
+.contacts-content_column {
+	flex: 0 0 50%;
+	margin: 0px 0px -8px 0px;
+}
+.contacts-content_map {
+	height: 100%;
+
+}
+.contacts-content_form {
+	padding: 55px 60px;
+}
+.contacts-content_form_title {
+	font-family:'Akzidenz';
+	font-size: 25px;
+	letter-spacing: 5px;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0px 0px 30px 0px;
+}
+.contacts-content_form-body {
+	max-width: 375px;
+}
+.contacts-content_form-line {
+	margin: 0px 0px 25px 0px;
+}
+.input {}
+.contacts-content_form-button {}
+.contacts-content_form-btn {}
+.btn {}
+.btn-w {}
+
+
+
+
+
+
+//подключение файлов UL стилей
+@import "header.scss";
+@import "footer.scss";
+@import "forms.scss";
